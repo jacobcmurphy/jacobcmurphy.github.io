@@ -1,1 +1,79 @@
-Hello World!
+<html>
+    <head>
+        <title>Jacob Murphy</title>
+        <meta name='viewport' content='width=device-width, initial-scale=1'>
+
+        <!-- Using inline styles since there is only 1 page and I don't want the extra request -->
+        <style>
+            html, body, div, span {
+                margin: 0;
+                padding: 0;
+                border: 0;
+                font-size: 100%;
+                font: inherit;
+                vertical-align: baseline;
+                box-sizing: border-box;
+            }
+
+            #contact-container {
+                position: fixed;
+                top: 0;
+                left: 0;
+                height: 100%;
+                width: 84px;
+                z-index: 1;
+                overflow-x: hidden;
+                background-color: rgb(2, 0, 90);
+                text-align: center;
+                color: white;
+            }
+
+            .social-icon {
+                margin: 10px;
+            }
+
+            #about-container {
+                margin-left: 100px;
+                padding: 1em;
+            }
+
+            #top-image {
+                text-align: center;
+            }
+
+            #top-image img {
+                border-radius: 50%;
+                max-width:100%;
+                height: auto;
+            }
+        </style>
+    </head>
+    <body>
+        <div id='main-container'>
+            <div id='contact-container'>
+                <div id='social-contact'>
+                    <div class='social-icon'>
+                        <a href='https://www.linkedin.com/in/jacobcmurphy/'><img src='images/social/big/linkedin.png' alt='LinkedIn' /></a>
+                    </div>
+                    <div class='social-icon'>
+                        <a href='https://github.com/jacobcmurphy/'><img src='images/social/big/github.png' alt='GitHub' /></a>
+                    </div>
+                    <div class='social-icon'>
+                        <a href='mailto:jacob@jacobcmurphy.com'><img src='images/social/big/email.png' alt='Email' /></a>
+                    </div>
+                    <div class='social-icon'>
+                        <a href='https://www.facebook.com/jacobcmurphy'><img src='images/social/big/facebook.png' alt='Facebook' /></a>
+                    </div>
+                    <div class='social-icon'>
+                        <a href='https://www.instagram.com/murphorum/'><img src='images/social/big/instagram.png' alt='Instagram' /></a>
+                    </div>
+                </div>
+            </div>
+            <div id='about-container'>
+                <div id='top-image'>
+                    <img src='images/jacob.jpg' alt='Jacob Murphy' />
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
